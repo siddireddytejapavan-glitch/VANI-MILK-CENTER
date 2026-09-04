@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 110" fill="none">
+  <!-- Fresh Green Leaves on the 'i' -->
+  <g transform="translate(162, 2)">
+    <!-- Left leaf -->
+    <path d="M12 18 C8 8, 0 5, -8 4 C-8 14, -2 22, 12 24 Z" fill="#2e7d32"/>
+    <path d="M-8 4 C2 12, 6 18, 12 24" stroke="#4caf50" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Right leaf -->
+    <path d="M14 18 C18 6, 28 2, 34 0 C34 10, 28 18, 16 22 Z" fill="#43a047"/>
+    <path d="M34 0 C26 8, 20 16, 16 22" stroke="#81c784" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- "Vani" scripted navy-blue text -->
+  <text x="14" y="62" font-family="'Brush Script MT', 'Segoe Script', 'Great Vibes', cursive, sans-serif" font-weight="900" font-style="italic" font-size="64" fill="#0f2b5c" letter-spacing="1">
+    Vani
+  </text>
+
+  <!-- "MILK CENTER" bold dark-green text -->
+  <text x="16" y="96" font-family="system-ui, -apple-system, 'Arial Black', sans-serif" font-weight="900" font-size="25" fill="#1b5e20" letter-spacing="3">
+    MILK CENTER
+  </text>
+</svg>
