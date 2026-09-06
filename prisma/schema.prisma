@@ -90,7 +90,7 @@ model ShopSettings {
   phone            String   @default("+91 98765 43210")
   whatsappNumber   String   @default("919876543210")
   address          String   @default("Shop No. 4, Main Road, Near Bus Stand, Dairy Nagar")
-  openingHours     String   @default("Morning: 5:30 AM - 1:00 PM | Evening: 4:30 PM - 9:30 PM")
+  openingHours     String   @default("Morning 5:00 AM - Evening 10:00 PM")
   googleMapsUrl    String   @default("https://maps.google.com/?q=dairy+shop")
   logoUrl          String   @default("/images/shop-logo.svg")
   aboutDescription String   @default("We are a local family-owned dairy shop providing fresh, pure, and high quality milk and dairy products for daily families, functions, marriages, and catering events.")

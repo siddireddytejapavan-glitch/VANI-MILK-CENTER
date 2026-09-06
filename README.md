@@ -235,5 +235,6 @@ Thank you for choosing our fresh dairy shop!
    }
    ```
    Set your PostgreSQL connection string in `.env` and run `npx prisma db push`.
-#   V A N I - M I L K - C E N T E R  
+#   V A N I - M I L K - C E N T E R 
+ 
  

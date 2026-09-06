@@ -33,7 +33,7 @@ export default async function HomePage() {
   ]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50">
+    <div className="min-h-screen flex flex-col bg-transparent">
       <Navbar />
       <CartDrawer />
       <FloatingWhatsApp />
@@ -43,7 +43,7 @@ export default async function HomePage() {
         <Hero />
 
         {/* 2. Quick Category Bar */}
-        <section className="bg-white py-6 border-b border-slate-200">
+        <section className="bg-white/85 backdrop-blur-md py-6 border-b border-slate-200/80 shadow-xs">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between gap-4 overflow-x-auto pb-2 sm:pb-0 scrollbar-none">
               <span className="text-xs font-black uppercase tracking-wider text-slate-400 shrink-0">

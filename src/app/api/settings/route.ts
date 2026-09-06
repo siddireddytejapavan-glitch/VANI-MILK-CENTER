@@ -17,7 +17,7 @@ export async function GET() {
           phone: '+91 98765 43210',
           whatsappNumber: '919876543210',
           address: 'Shop No. 4, Main Road, Near Clock Tower, Tuni, Andhra Pradesh',
-          openingHours: 'Morning: 5:30 AM - 1:00 PM | Evening: 4:30 PM - 9:30 PM',
+          openingHours: 'Morning 5:00 AM - Evening 10:00 PM',
           googleMapsUrl: 'https://maps.google.com/?q=Dairy+Shop+Tuni',
           logoUrl: '/images/shop-logo.svg',
           aboutDescription: 'We are a local family-owned dairy shop committed to providing pure, farm-fresh milk, thick curd, lassi, buttermilk, and bulk function supplies for marriages, birthdays, and community festivals.',

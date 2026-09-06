@@ -84,9 +84,9 @@ export default function ProductCard({ product }: { product: ProductType }) {
   };
 
   return (
-    <div className="group bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
+    <div className="group bg-white/95 backdrop-blur-md rounded-3xl border border-white/80 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden hover:-translate-y-1">
       {/* Product Image Container */}
-      <div className="relative h-56 w-full bg-slate-100 overflow-hidden">
+      <div className="relative h-60 w-full bg-slate-100/60 overflow-hidden">
         <Image
           src={product.imageUrl || '/images/default-dairy.jpg'}
           alt={product.name}

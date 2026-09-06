@@ -10,7 +10,7 @@ export default function ContactSection() {
   const whatsAppLink = generateEnquiryWhatsAppLink(settings.whatsappNumber);
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-white/85 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-14 space-y-2">
           <span className="text-xs font-black uppercase tracking-widest text-sky-600 bg-sky-50 px-3 py-1 rounded-full">
@@ -26,7 +26,7 @@ export default function ContactSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           {/* Contact Details Card */}
-          <div className="lg:col-span-6 bg-slate-50 p-8 rounded-3xl border border-slate-200/90 flex flex-col justify-between space-y-6">
+          <div className="lg:col-span-6 bg-white/95 backdrop-blur-sm p-8 rounded-3xl border border-white/80 shadow-md flex flex-col justify-between space-y-6">
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center shrink-0">
@@ -50,7 +50,7 @@ export default function ContactSection() {
                     {settings.openingHours}
                   </p>
                   <span className="inline-block text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md mt-1">
-                    Open All 7 Days
+                    Open All 7 Days (5:00 AM – 10:00 PM)
                   </span>
                 </div>
               </div>

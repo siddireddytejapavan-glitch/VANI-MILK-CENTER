@@ -8,7 +8,7 @@
 
 body {
   font-family: var(--font-sans);
-  background-color: #f8fafc;
+  background-color: transparent;
   color: #0f172a;
   -webkit-tap-highlight-color: transparent;
 }

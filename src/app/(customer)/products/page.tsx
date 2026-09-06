@@ -26,7 +26,7 @@ export default async function ProductsPage() {
   ]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50">
+    <div className="min-h-screen flex flex-col bg-transparent">
       <Navbar />
       <CartDrawer />
       <FloatingWhatsApp />

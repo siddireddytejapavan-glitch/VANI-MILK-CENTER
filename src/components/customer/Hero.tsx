@@ -12,15 +12,20 @@ export default function Hero() {
   const whatsAppLink = generateEnquiryWhatsAppLink(settings.whatsappNumber);
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-sky-50/70 via-white to-slate-50 pt-10 pb-16 lg:py-20 border-b border-slate-100">
+    <section className="relative overflow-hidden bg-gradient-to-b from-white/90 via-sky-50/70 to-white/80 backdrop-blur-[2px] pt-10 pb-16 lg:py-20 border-b border-slate-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Text & CTAs */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             {/* Tag badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-100/80 text-sky-800 text-xs font-extrabold tracking-wide uppercase">
-              <Sparkles className="w-3.5 h-3.5 text-sky-600" />
-              <span>100% Pure &amp; Farm Fresh Dairy</span>
+            <div className="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-100/90 text-sky-800 text-xs font-extrabold tracking-wide uppercase border border-sky-200/60 shadow-xs">
+                <Sparkles className="w-3.5 h-3.5 text-sky-600" />
+                <span>100% Pure &amp; Farm Fresh Dairy</span>
+              </div>
+              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-100/90 text-emerald-800 text-xs font-black tracking-wide border border-emerald-200/60 shadow-xs">
+                <span>⏰ Open: 5:00 AM – 10:00 PM</span>
+              </div>
             </div>
 
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.15]">
@@ -73,36 +78,46 @@ export default function Hero() {
 
             {/* Small reassurance note */}
             <p className="text-xs text-slate-500 pt-1">
-              * Fast response on WhatsApp • Bulk orders for marriages &amp; catering accepted
+              * Fast response on WhatsApp • Daily Store Timings: 5:00 AM to 10:00 PM
             </p>
           </div>
 
-          {/* Right Image Display */}
+          {/* Right Image Display - Storefront Photo Showcase */}
           <div className="lg:col-span-5">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               {/* Outer decorative card */}
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[3/4] sm:aspect-[4/5] max-h-[540px] mx-auto bg-white">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] sm:aspect-[4/3] max-h-[540px] mx-auto bg-slate-900 group">
                 <Image
-                  src="/images/vani-poster.jpg"
-                  alt="Vani Milk Center Gopivanipalem - Quality Milk Products"
+                  src="/images/vani-storefront.jpg"
+                  alt="Vani Milk Center Storefront - Gopivanipalem"
                   fill
-                  className="object-contain"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent pointer-events-none" />
+
+                {/* Top Badge */}
+                <div className="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none">
+                  <span className="bg-sky-600/90 backdrop-blur-md text-white text-[11px] font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                    📍 Our Actual Shop
+                  </span>
+                  <span className="bg-emerald-600/90 backdrop-blur-md text-white text-[11px] font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                    Open 5 AM - 10 PM
+                  </span>
+                </div>
 
                 {/* Floating caption on image */}
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="font-extrabold text-sm sm:text-base">
+                      <p className="font-extrabold text-sm sm:text-base tracking-wide">
                         VANI MILK CENTER
                       </p>
                       <p className="text-xs text-slate-200">
-                        Gopivanipalem • Home Delivery: 7995597719
+                        Gopivanipalem • WhatsApp / Call: 7995597719
                       </p>
                     </div>
-                    <span className="bg-emerald-500 text-white text-xs font-black px-2.5 py-1 rounded-full uppercase tracking-wider">
+                    <span className="bg-white/20 backdrop-blur-md text-white text-[11px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider border border-white/30">
                       100% Pure
                     </span>
                   </div>
@@ -110,7 +125,7 @@ export default function Hero() {
               </div>
 
               {/* Floating micro card */}
-              <div className="hidden sm:flex absolute -bottom-5 -left-5 bg-white p-3.5 rounded-2xl shadow-xl border border-slate-100 items-center gap-3">
+              <div className="hidden sm:flex absolute -bottom-5 -left-5 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-xl border border-slate-100 items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center text-amber-600 font-black text-lg">
                   10kg
                 </div>

@@ -20,7 +20,7 @@ export default function WhyChooseUs() {
     {
       icon: CalendarCheck,
       title: 'Open 365 Days a Year',
-      desc: 'We are open every single day from 5:30 AM to ensure your morning tea, coffee, and daily breakfast is never delayed.',
+      desc: 'We are open every single day from 5:00 AM to 10:00 PM to ensure your morning tea, coffee, and daily dairy needs are never delayed.',
       badge: 'Reliable Daily',
     },
     {
@@ -44,7 +44,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-20 bg-slate-50 border-b border-slate-200/80">
+    <section className="py-20 bg-white/80 backdrop-blur-md border-b border-slate-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <span className="text-xs font-black uppercase tracking-widest text-sky-600 bg-sky-100 px-3 py-1 rounded-full">
@@ -64,7 +64,7 @@ export default function WhyChooseUs() {
             return (
               <div
                 key={point.title}
-                className="bg-white p-7 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group"
+                className="bg-white/95 backdrop-blur-sm p-7 rounded-3xl border border-white/80 shadow-sm hover:shadow-xl transition-all relative overflow-hidden group"
               >
                 <div className="flex items-center justify-between mb-4">
                   <div className="w-12 h-12 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center group-hover:bg-sky-600 group-hover:text-white transition-colors">

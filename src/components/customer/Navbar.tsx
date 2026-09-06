@@ -33,7 +33,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-4">
             <span className="flex items-center gap-1.5 font-medium">
               <Clock className="w-3.5 h-3.5 text-sky-200" />
-              {settings.openingHours || 'Daily: 5:30 AM - 1:00 PM | 4:30 PM - 9:30 PM'}
+              {settings.openingHours || 'Daily: 5:00 AM - 10:00 PM'}
             </span>
           </div>
           <div className="flex items-center space-x-4 font-medium">

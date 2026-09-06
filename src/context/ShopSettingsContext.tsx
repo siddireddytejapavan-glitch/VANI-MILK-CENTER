@@ -19,7 +19,7 @@ const defaultSettings: ShopSettingsData = {
   phone: '7995597719',
   whatsappNumber: '917995597719',
   address: 'Gopivanipalem, Andhra Pradesh',
-  openingHours: 'Morning: 5:30 AM - 1:00 PM | Evening: 4:30 PM - 9:30 PM',
+  openingHours: 'Morning 5:00 AM - Evening 10:00 PM',
   googleMapsUrl: 'https://maps.google.com/?q=Gopivanipalem',
   logoUrl: '/images/shop-logo.svg',
   aboutDescription: 'Welcome to Vani Milk Center, Gopivanipalem. We deliver 100% pure & natural, hygienically processed milk, curd, ghee, paneer, buttermilk, and lassi for daily families, functions, and bulk catering orders.',

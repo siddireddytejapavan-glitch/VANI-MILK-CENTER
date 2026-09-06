@@ -21,7 +21,7 @@ export default async function AboutPage() {
   const whatsAppLink = generateEnquiryWhatsAppLink(whatsappNumber);
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50">
+    <div className="min-h-screen flex flex-col bg-transparent">
       <Navbar />
       <CartDrawer />
       <FloatingWhatsApp />
@@ -42,11 +42,11 @@ export default async function AboutPage() {
           </div>
 
           {/* Main Visual & Story */}
-          <div className="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden grid grid-cols-1 md:grid-cols-2">
-            <div className="relative aspect-[4/3] md:aspect-auto">
+          <div className="bg-white/95 backdrop-blur-md rounded-3xl border border-white/80 shadow-md overflow-hidden grid grid-cols-1 md:grid-cols-2">
+            <div className="relative aspect-[4/3] md:aspect-auto min-h-[300px]">
               <Image
-                src="/images/hero-dairy.jpg"
-                alt="Dairy shop display"
+                src="/images/vani-storefront.jpg"
+                alt="Vani Milk Center Storefront - Gopivanipalem"
                 fill
                 className="object-cover"
               />
@@ -82,7 +82,7 @@ export default async function AboutPage() {
 
           {/* Simple Trust Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-xs space-y-2">
+            <div className="bg-white/95 backdrop-blur-sm p-6 rounded-3xl border border-white/80 shadow-xs space-y-2">
               <div className="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center">
                 <HeartHandshake className="w-5 h-5" />
               </div>
@@ -92,17 +92,17 @@ export default async function AboutPage() {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-xs space-y-2">
+            <div className="bg-white/95 backdrop-blur-sm p-6 rounded-3xl border border-white/80 shadow-xs space-y-2">
               <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
                 <Sparkles className="w-5 h-5" />
               </div>
               <h3 className="font-extrabold text-slate-900 text-base">Freshness Guaranteed</h3>
               <p className="text-xs text-slate-500 leading-relaxed">
-                Our morning stock opens at 5:30 AM every day so your morning coffee and tea are fresh.
+                Our morning stock opens at 5:00 AM every day so your morning coffee and tea are fresh. Open daily 5:00 AM to 10:00 PM.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-xs space-y-2">
+            <div className="bg-white/95 backdrop-blur-sm p-6 rounded-3xl border border-white/80 shadow-xs space-y-2">
               <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center">
                 <MessageCircle className="w-5 h-5" />
               </div>

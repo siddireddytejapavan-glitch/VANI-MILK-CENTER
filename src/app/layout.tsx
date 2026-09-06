@@ -25,7 +25,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-slate-50 text-slate-900 antialiased selection:bg-sky-100 selection:text-sky-800">
+      <body className="min-h-screen relative text-slate-900 antialiased selection:bg-sky-100 selection:text-sky-800">
+        {/* Authentic Storefront Background of Vani Milk Center */}
+        <div
+          className="fixed inset-0 pointer-events-none -z-20 bg-cover bg-center bg-fixed bg-no-repeat"
+          style={{ backgroundImage: "url('/images/vani-storefront.jpg')" }}
+          aria-hidden="true"
+        />
+        {/* Luminous frosted veil ensuring the shop is clearly visible while text & products remain 100% crisp and readable */}
+        <div
+          className="fixed inset-0 pointer-events-none -z-10 bg-slate-100/80 backdrop-blur-[1px]"
+          aria-hidden="true"
+        />
+
         <ShopSettingsProvider>
           <CartProvider>
             {children}
